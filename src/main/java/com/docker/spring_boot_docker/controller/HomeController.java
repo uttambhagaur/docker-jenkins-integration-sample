@@ -21,4 +21,9 @@ public class HomeController {
     public String testId(@PathVariable String id) {
         return "Hello Docker Test ID: " + id;
     }
+
+    @GetMapping("/about")
+    public String about() {
+        return "Hello Docker About!";
+    }
 }
